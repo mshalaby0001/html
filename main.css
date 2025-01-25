@@ -1,9 +1,9 @@
 html {
     font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body {
-    background-color: #000000;
-    color: whitesmoke;
+
 }   
 a{
     color: aliceblue;

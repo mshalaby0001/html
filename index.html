@@ -73,6 +73,143 @@
                 cat is here for you
             </figcaption>
         </figure>
+        <code>
+            class one{
+                hellow
+            }
+        </code>
+        
+        <!--code for form example-->
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Form Example</title>
+</head>
+<body>
+
+<form action="https://httpbin.org/get" method="get">
+
+    <!-- 1. Basic Form Setup -->
+    <fieldset>
+        <legend>Basic Form Setup</legend>
+        <p>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" autocomplete="on" required autofocus>
+        </p>
+    </fieldset>
+
+    <!-- 2. Input Fields with Labels -->
+    <fieldset>
+        <legend>Input Fields with Labels</legend>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@example.com" required>
+        </p>
+    </fieldset>
+
+    <!-- 3. Enhancing Input Usability -->
+    <fieldset>
+        <legend>Enhancing Input Usability</legend>
+        <p>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="555-555-5555" autocomplete="on" required>
+        </p>
+    </fieldset>
+
+    <!-- 4. Cloning and Wrapping Inputs -->
+    <fieldset>
+        <legend>Cloning and Wrapping Inputs</legend>
+        <p>
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" min="1" max="100" required>
+        </p>
+    </fieldset>
+
+    <!-- 5. Specialized Input Types -->
+    <fieldset>
+        <legend>Specialized Input Types</legend>
+        <p>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </p>
+        <p>
+            <label for="birthYear">Year of Birth</label>
+            <input type="number" id="birthYear" name="birthYear" min="1900" max="2025" value="2000">
+        </p>
+    </fieldset>
+
+    <!-- 6. Dropdown Menus -->
+    <fieldset>
+        <legend>Dropdown Menus</legend>
+        <label for="food">Favorite Food</label>
+        <select id="food" name="food">
+            <optgroup label="Fast Food">
+                <option value="burger">Burger</option>
+                <option value="pizza" selected>Pizza</option>
+            </optgroup>
+            <optgroup label="Desserts">
+                <option value="icecream">Ice Cream</option>
+                <option value="cake">Cake</option>
+            </optgroup>
+        </select>
+    </fieldset>
+
+    <!-- 7. Organizing Large Forms -->
+    <fieldset>
+        <legend>Organizing Large Forms</legend>
+        <p>
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" required>
+        </p>
+        <p>
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" required>
+        </p>
+    </fieldset>
+
+    <!-- 8. Radio Buttons -->
+    <fieldset>
+        <legend>Radio Buttons</legend>
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+    </fieldset>
+
+    <!-- 9. Checkboxes -->
+    <fieldset>
+        <legend>Checkboxes</legend>
+        <p>Select Hobbies:</p>
+        <input type="checkbox" id="sports" name="hobbies" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="hobbies" value="music">
+        <label for="music">Music</label>
+    </fieldset>
+
+    <!-- 10. Text Areas -->
+    <fieldset>
+        <legend>Text Areas</legend>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" cols="30" rows="5" placeholder="Write your message here"></textarea>
+    </fieldset>
+
+    <!-- 11. Buttons for Submission -->
+    <fieldset>
+        <legend>Form Actions</legend>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Submit via POST</button>
+    </fieldset>
+
+</form>
+
+</body>
+</html>
+
+          
     </body>
     </html>
    
